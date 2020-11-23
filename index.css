@@ -1,7 +1,29 @@
 /* CSS vars */
 :root {
-  --grey0: #000;
-  --grey7: #fff;
+  /* Font */
+  --font: helvetica, arial, sans-serif;
+
+  /* Font sizes */
+  --font-size-1: 11px;
+  --font-size-2: 13px;
+  --font-size-3: 15px;
+  --font-size-4: 18px;
+  --font-size-5: 22px;
+  --font-size-6: 27px;
+  --font-size-7: 33px;
+
+  /* Colors */
+  --grey-0: hsl(0, 0%, 0%);
+  --grey-1: hsl(0, 0%, 10%);
+  --grey-2: hsl(0, 0%, 20%);
+  --grey-3: hsl(0, 0%, 30%);
+  --grey-4: hsl(0, 0%, 40%);
+  --grey-5: hsl(0, 0%, 50%);
+  --grey-6: hsl(0, 0%, 60%);
+  --grey-7: hsl(0, 0%, 70%);
+  --grey-8: hsl(0, 0%, 80%);
+  --grey-9: hsl(0, 0%, 90%);
+  --grey-10: hsl(0, 0%, 100%);
 }
 
 * {
@@ -11,5 +33,23 @@
 }
 
 body {
-  background: var(--grey7);
+  font-family: var(--font);
+  font-size: var(--font-size-3);
+  color: var(--grey-0);
+  background: var(--grey-10);
+}
+
+#Main {
+  display: grid;
+  grid-template-columns: 1fr 720px 1fr;
+  outline: 1px solid red;
+}
+
+#Content {
+  grid-column: 2 / 3;
+  /* outline: 1px solid red; */
+}
+
+.info {
+  /* outline: 1px solid red; */
 }
