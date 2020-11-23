@@ -1,0 +1,15 @@
+/* CSS vars */
+:root {
+  --grey0: #000;
+  --grey7: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grey7);
+}
