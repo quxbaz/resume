@@ -23,7 +23,7 @@
   --grey-8: hsl(0, 0%, 87%);
   --grey-9: hsl(0, 0%, 100%);
 
-  --blue-1: hsl(200, 85%, 30%);
+  --blue-1: hsl(210, 80%, 40%);
   --blue-2: hsl(200, 100%, 40%);
   --blue-3: hsl(200, 85%, 55%);
   --blue-4: hsl(200, 85%, 65%);
@@ -34,7 +34,7 @@
   /* --purple-4: hsl(279deg 90% 50%); */
 
   /* Layout*/
-  --left-page-margin: 200px;
+  --left-page-margin: 180px;
   --right-page-margin: 40px;
 }
 
@@ -62,9 +62,8 @@ li {
 }
 
 a {
-  font-size: var(--font-size-3);
   text-decoration: none;
-  color: #00f;
+  color: var(--blue-1);
 }
 
 a:hover {
@@ -102,14 +101,14 @@ section {
 .grid {}
 
 .grid-row:first-child {
-  padding: 0 0 16px;
+  padding: 0 0 10px;
 }
 
 .grid-row {
   display: grid;
   grid-template-columns: var(--left-page-margin) 1fr var(--right-page-margin);
   grid-column: 1 / -1;
-  padding: 16px 0;
+  padding: 20px 0;
 }
 
 .grid-row header {
@@ -123,7 +122,7 @@ section {
 
 .grid-row-center {
   grid-column: 2 / 3;
-  padding: 0 40px;
+  padding: 0 40px 0 60px;
 }
 
 .grid-row-right {
@@ -134,7 +133,7 @@ section {
 
 .history date {
   position: relative;
-  top: 1px;
+  top: 11px;
   font-size: var(--font-size-2);
 }
 
@@ -146,13 +145,12 @@ section {
   font-weight: bold;
 }
 
-.history .company:before {
-  /* content: "⬛ "; */
+.history .company:not(a) {
+  color: var(--grey-4);
 }
 
 .history role {
   font-style: italic;
-  /* color: var(--grey-6); */
 }
 
 .history role:before {
