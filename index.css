@@ -58,7 +58,7 @@ h4 {
 }
 
 li {
-  list-style-type: disc;
+  list-style-type: square;
 }
 
 a {
@@ -139,7 +139,6 @@ role {
 
 date {
   font-size: var(--font-size-2);
-  color: var(--grey-4);
 }
 
 /* History section */
@@ -158,7 +157,6 @@ date {
 
 .history .content > li {
   display: flex;
-  justify-content: space-between;
 }
 
 .history .heading-line {
@@ -167,7 +165,7 @@ date {
   text-align: right;
 }
 
-.history .heading-line .company {
+.history .company {
   font-weight: bold;
 }
 
