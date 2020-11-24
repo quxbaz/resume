@@ -34,8 +34,8 @@
   /* --purple-4: hsl(279deg 90% 50%); */
 
   /* Layout*/
-  --left-page-margin: 180px;
-  --right-page-margin: 40px;
+  --left-grid-margin: 180px;
+  --right-grid-margin: 80px;
 }
 
 * {
@@ -83,12 +83,6 @@ a:hover {
   box-shadow: 0 2px 10px 0 hsla(216, 37%, 48%, 0.4);
 }
 
-/* Top info */
-
-.info {
-  text-align: center;
-}
-
 /* Sections */
 
 section {
@@ -106,7 +100,7 @@ section {
 
 .grid-row {
   display: grid;
-  grid-template-columns: var(--left-page-margin) 1fr var(--right-page-margin);
+  grid-template-columns: var(--left-grid-margin) 1fr var(--right-grid-margin);
   grid-column: 1 / -1;
   padding: 20px 0;
 }
@@ -122,11 +116,37 @@ section {
 
 .grid-row-center {
   grid-column: 2 / 3;
-  padding: 0 40px 0 60px;
+  padding: 0 0 0 60px;
 }
 
 .grid-row-right {
   grid-column: 3 / 4;
+}
+
+/* Text sections */
+
+.text-section {
+  --space: 80px;
+  padding-left: var(--space);
+  padding-right: var(--space);
+}
+
+.text-section header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Info section */
+
+.info {
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* Summary section */
+
+.summary {
+  border-top: none;
 }
 
 /* History section */
