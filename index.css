@@ -72,7 +72,14 @@ a:hover {
 
 .de-em {
   font-size: var(--font-size-2);
+  font-weight: normal;
   color: var(--grey-6);
+}
+
+date {
+  position: relative;
+  top: 11px;
+  font-size: var(--font-size-2);
 }
 
 #Main {
@@ -156,12 +163,6 @@ section {
 
 /* History section */
 
-.history date {
-  position: relative;
-  top: 11px;
-  font-size: var(--font-size-2);
-}
-
 .history aside {
   margin-bottom: 3px;
 }
@@ -202,7 +203,9 @@ section {
   padding-top: 20px;
 }
 
-.recent-work .grid-row-left a {
+.recent-work a {
+  display: block;
+  margin-bottom: 3px;
   font-weight: bold;
 }
 
