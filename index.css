@@ -209,6 +209,15 @@ section {
   text-align: center;
 }
 
+.info p:first-child {
+  margin-bottom: 3px;
+}
+
+.info p:not(:first-child) {
+  color: var(--grey-2);
+  transform: scale(1, 0.97);
+}
+
 /* Summary section */
 
 .summary {
