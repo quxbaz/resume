@@ -165,6 +165,11 @@ date {
   text-align: right;
 }
 
+.history .heading-line date {
+  position: relative;
+  top: 1px;
+}
+
 .history .company {
   font-weight: bold;
 }
