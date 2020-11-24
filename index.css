@@ -57,7 +57,13 @@ li {
 
 a {
   font-size: var(--font-size-3);
+  /* text-decoration: underline; */
   text-decoration: none;
+  color: #00f;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #Main {
@@ -67,7 +73,7 @@ a {
 
 #Content {
   grid-column: 2 / 3;
-  padding: 40px 0;
+  padding: 60px 0;
   /* padding: 40px 80px; */
   background: var(--grey-9);
   margin: 120px 0;
@@ -77,7 +83,6 @@ a {
 /* Top info */
 
 .info {
-  margin-bottom: 24px;
   text-align: center;
 }
 
@@ -97,28 +102,25 @@ section header {
   width: 140px;
   text-align: right;
   font-weight: bold;
-}
-
-section header span {
-  position: relative;
-  padding: 7px 16px;
-  background: var(--grey-2);
-  color: var(--grey-9);
-  border-radius: 3px;
+  color: var(--grey-2);
 }
 
 section .content {
   flex: 1;
-  padding: 0 80px 0 24px;
+  padding: 0 80px 0 40px;
 }
 
 section > ul > li {
   list-style-type: none;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 section > ul ul {
   margin-left: 40px;
+}
+
+section > ul li:last-child {
+  margin-bottom: 0;
 }
 
 /* Heading lines */
@@ -126,11 +128,13 @@ section > ul ul {
 .heading-line {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
 }
 
-.heading-line a {
-  color: #00f;
-  text-decoration: underline;
+role {
+  /* font-style: italic; */
+  /* color: var(--grey-6); */
 }
 
 date {
@@ -142,11 +146,15 @@ date {
 
 .history > ul > li {
   margin: 0;
-  padding: 10px 0;
-  border-top: 1px solid var(--grey-8);
+  padding: 16px 0;
+  border-top: 1px solid var(--grey-5);
 }
 
 .history > ul > li:first-child {
   border-top: none;
   padding-top: 0;
+}
+
+.history > ul > li:last-child {
+  padding-bottom: 0;
 }
