@@ -7,35 +7,50 @@
   <body>
     <div id="Main">
       <div id="Content">
-        <section class="info">
-          <p>David Yeung</p>
-          <p>4788 Hwy 15 Apt E · Pinos Altos, NM 88053</p>
+
+        <div class="info">
+          <p><b>David Yeung</b></p>
+          <p>4788 HWY 15 APT E · Pinos Altos, NM 88053</p>
           <p>575-404-9925 · davidy889@gmail.com</p>
-        </section>
+        </div>
+
         <section>
-          <header>Summary</header>
-          <p>
-            Front-end developer. 6+ years of experience.
-          </p>
+          <header><span>Summary</span></header>
+          <div class="content">
+            <p>
+              Front-end developer with 6+ years of experience with strong
+              background in libraries, processes, and various programming models.
+              Focused on meeting the real-world needs of companies by
+              understanding the very real tradeoffs of key decisions in front-end
+              development. Principal goal is delivering high-quality, reliable
+              software that attends to customer needs.
+            </p>
+          </div>
         </section>
-        <section>
-          <header>History (most recent)</header>
-          <ul class="history">
+
+        <section class="history">
+          <header><span>History</span></header>
+          <ul class="content">
             <li>
-              <div>
-                <h3><a href="https://itarotools.com">Itaro Tools</a> · <role>Founder, woodworker, programmer</role></h3>
-                <date>2017 - current</date>
+              <div class="heading-line">
+                <h3><a href="https://itarotools.com">ITARO TOOLS</a> · <role>Founder, programmer, woodworker</role></h3>
+                <date>2017-current</date>
               </div>
-              <p>
-                Founded a woodworking company known for producing tools
-                of <a href="https://www.amazon.com/dp/B07DSP6WSP?ref=myi_title_dp#customerReviews">exceptional
-                quality</a>. Fulfilled 1500+ orders to customers around the world.
-              </p>
+              <ul>
+                <li>
+                  Founded a woodworking company known for producing tools
+                  of <a href="https://www.amazon.com/dp/B07DSP6WSP?ref=myi_title_dp#customerReviews">exceptional
+                  quality</a>.
+                </li>
+                <li>
+                  Fulfilled 1500+ orders to customers around the world.
+                </li>
+              </ul>
             </li>
             <li>
-              <div>
+              <div class="heading-line">
                 <h3><a href="https://www.pypestream.com/">pypestream</a> · <role>Lead front-end developer</role></h3>
-                <date>2016 - 2017</date>
+                <date>2016-2017</date>
               </div>
               <ul>
                 <li>Lead the development of new major features and projects.</li>
@@ -44,19 +59,21 @@
               </ul>
             </li>
             <li>
-              <div>
-                <h3>CodeNow · <role>Instructor</role></h3>
+              <div class="heading-line">
+                <h3><a href="https://www.codenow.org/">CodeNow</a> · <role>Instructor</role></h3>
                 <date>2016</date>
               </div>
-              <p>
-                Acted as an instructor for a small group of students learning to
-                write their first computer programs.
-              </p>
+              <ul>
+                <li>
+                  Acted as instructor to a small group of students learning to
+                  write their first computer programs.
+                </li>
+              </ul>
             </li>
             <li>
-              <div>
+              <div class="heading-line">
                 <h3>Cadit Health · <role>Front-end developer</role></h3>
-                <date>2013 - 2014</date>
+                <date>2013-2014</date>
               </div>
               <ul>
                 <li>Designed and implemented major features.</li>
@@ -66,30 +83,27 @@
               </ul>
             </li>
             <li>
-              <div>
+              <div class="heading-line">
                 <h3>codeniche · <role>Lead developer</role></h3>
                 <date>2012</date>
               </div>
-              <p>
-                Delivered a functioning static website to a local restaurant owner.
-              </p>
+              <ul><li>Delivered a functioning static website for a local restaurant owner.</li></ul>
             </li>
             <li>
-              <div>
+              <div class="heading-line">
                 <h3>The Megawatt Hour · <role>Junior front-end developer</role></h3>
-                <date>2011 - 2012</date>
+                <date>2011-2012</date>
               </div>
-              <ul>
-                <p>Assisted with the overall development of a wordpress site.</p>
-              </ul>
+              <ul><li>Assisted with the overall development of a wordpress site.</li></ul>
             </li>
           </ul>
         </section>
-        <section>
-          <header>Recent work</header>
-          <ul>
+
+        <section class="recent-work">
+          <header><span>Recent work</span></header>
+          <ul class="content">
             <li>
-              <div>
+              <div class="heading-line">
                 <a href="https://github.com/quxbaz/qwux">qwux</a>
                 <date>2020</date>
               </div>
@@ -100,7 +114,7 @@
               </p>
             </li>
             <li>
-              <div>
+              <div class="heading-line">
                 <a href="https://github.com/quxbaz/stateful-router">stateful-router</a>
                 <date>2020</date>
               </div>
@@ -110,42 +124,80 @@
               </p>
             </li>
             <li>
-              <div>
+              <div class="heading-line">
                 <a href="https://github.com/quxbaz/quick-state">quick-state <i>(in progress)</i></a>
                 <date>2020</date>
               </div>
               <p>
-                Simple immutable state management library. Compared to Redux,
-                provides a more direct interface to immutable store updates.
+                Simple immutable state management library. Provides a more
+                direct interface to immutable store updates compared to Redux.
               </p>
             </li>
           </ul>
         </section>
+
         <section>
-          <header>Skills</header>
-          <ul>
+          <header><span>Skills</span></header>
+          <ul class="content">
             <li>Core browsers technologies: javascript, HTML, CSS</li>
             <li>
               Deep understanding of vanilla javascript: values vs. references,
               the event loop, prototypical inheritance, equality and identity
               comparison, first-class functions, closures, higher-order
               functions, mutatable and immutable types, null vs. undefined
-              values, etc.
+              values.
             </li>
             <li>
               Modern javascript (ES6+): const vs. let, promises, async/await,
               generators, arrow functions, classes.
             </li>
-            <li>Understanding of common paradigms</li>
-            <li>Testing, automated ci, coverage</li>
-            <li>Build tools: rollup, webpack, babel, analyzing bundle sizes, npm</li>
-            <li>git, github workflows</li>
-            <li>TypeScript</li>
+            <li>
+              TypeScript: understanding of basic types, interfaces, type
+              aliases.
+            </li>
+            <li>
+              Native DOM: Querying, creating, appending, removing raw DOM.
+            </li>
+            <li>
+              CSS: box model, positioning, grid layout, flexbox,
+              pseudo-selectors, specificity, CSS variables, CSS modules,
+              CSS-in-JS.
+            </li>
+            <li>
+              React: view as a function, virtual dom, class-based components,
+              functional components, hooks, declarative UI, performance, and
+              optimization. Understanding the React model: components, elements,
+              and how they relate to actual DOM. The underlying hooks
+              implementation.
+            </li>
+            <li>
+              Redux: immutable state, interop with React, state-based rendering,
+              reducers, actions, action types.
+            </li>
+            <li>
+              Understanding of the differences between functional,
+              object-oriented, declarative, imperative, and event-driven
+              programming models; and their applications.
+            </li>
+            <li>
+              Testing: unit testing with jest, automated CI, code coverage,
+              functional testing with Selenium.
+            </li>
+            <li>
+              Build tools: webpack, rollup, babel, analyzing and minimizing
+              bundle sizes, npm, npm scripts and configuration.
+            </li>
+            <li>Version control: git and GitHub workflows.</li>
           </ul>
         </section>
+
         <section>
-          <header>Education</header>
+          <header><span>Education</span></header>
+          <div class="content">
+            B.S. in Computer Science, Brooklyn College.
+          </div>
         </section>
+
       </div>
     </div>
   </body>
