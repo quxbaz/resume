@@ -217,6 +217,24 @@ section {
 
 /* History section */
 
+.history date {
+  position: relative;
+}
+
+/* History line */
+.history date:after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  margin-left: -14px;
+  height: 100%;
+  border-right: 1px dashed var(--grey-7);
+}
+
+.history .grid-row:last-of-type date:after {
+  display: none;
+}
+
 .history aside {
   margin-bottom: 3px;
 }
