@@ -23,7 +23,7 @@
   --grey-8: hsl(0, 0%, 87%);
   --grey-9: hsl(0, 0%, 100%);
 
-  --blue-1: hsl(210, 80%, 40%);
+  --blue-1: hsl(210, 100%, 40%);
   --blue-2: hsl(200, 100%, 40%);
   --blue-3: hsl(200, 85%, 55%);
   --blue-4: hsl(200, 85%, 65%);
@@ -31,7 +31,7 @@
   --blue-6: hsl(200, 85%, 85%);
   --blue-7: hsl(200, 85%, 95%);
 
-  /* --purple-4: hsl(279deg 90% 50%); */
+  --purple-1: hsl(273deg 60% 57%);
 
   /* Layout*/
   --left-grid-margin: 180px;
@@ -76,6 +76,34 @@ a:hover {
   color: var(--grey-6);
 }
 
+.light-text {
+  color: var(--grey-6);
+}
+
+.smiley {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+  padding: 2px;
+  border: 2px solid var(--grey-7);
+  border-radius: 32px;
+  font-weight: bold;
+  transform: rotate(111deg);
+  pointer-events: none;
+  user-select: none;
+}
+
+.smiley .m {
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--grey-7);
+  transform: rotate(-85deg);
+}
+
 date {
   position: relative;
   top: 11px;
@@ -90,7 +118,7 @@ date {
 
 #Content {
   grid-column: 2 / 3;
-  /* padding: var(--right-pasge-margin) 0; */
+  padding-bottom: 40px;
   background: var(--grey-9);
   box-shadow: 0 2px 10px 0 hsla(216, 37%, 48%, 0.4);
 }
@@ -151,7 +179,7 @@ section {
 /* Info section */
 
 .info {
-  margin-top: 60px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -196,7 +224,7 @@ section {
 .recent-work {}
 
 .recent-work .grid-row {
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .recent-work .grid-row:nth-child(2) {
@@ -211,6 +239,21 @@ section {
 
 /* Skills section */
 
-.skills {
+.skills {}
 
+.skills .grid-row {
+  padding: 15px 0;
+}
+
+.skills .grid-row:nth-child(2) {
+  padding-top: 20px;
+}
+
+.skills aside {
+  font-size: var(--font-size-2);
+}
+
+.skills .light-text b {
+  /* color: var(--grey-1); */
+  color: var(--purple-1);
 }
