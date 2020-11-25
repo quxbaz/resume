@@ -303,7 +303,7 @@ section {
 
 .recent-work .github-logo {
   position: relative;
-  top: -10px;
+  top: -8px;
   transition: all 180ms ease-out;
 }
 
