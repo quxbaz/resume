@@ -256,6 +256,7 @@ section {
 
 .history .company {
   font-weight: bold;
+  opacity: 0.9;
 }
 
 .history .company:not(a) {
