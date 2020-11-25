@@ -301,6 +301,17 @@ section {
   padding-top: 20px;
 }
 
+.recent-work .github-logo {
+  position: relative;
+  top: -10px;
+  transition: all 180ms ease-out;
+}
+
+.recent-work .github-logo:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
 .recent-work date {
   top: 11px;
 }
