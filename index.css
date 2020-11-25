@@ -313,6 +313,8 @@ section {
 }
 
 .skills aside {
+  position: relative;
+  top: 1px;
   font-size: var(--font-size-2);
 }
 
