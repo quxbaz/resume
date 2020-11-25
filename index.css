@@ -135,7 +135,6 @@ a:hover {
 
 date {
   position: relative;
-  top: 11px;
   font-size: var(--font-size-2);
 }
 
@@ -246,7 +245,7 @@ section {
   top: 29px;
   margin-left: -14px;
   height: 100%;
-  border-right: 1px dashed var(--grey-7);
+  border-right: 1px solid var(--grey-7);
 }
 
 .history .grid-row:last-of-type date:after {
@@ -294,6 +293,10 @@ section {
   padding-top: 20px;
 }
 
+.recent-work date {
+  top: 11px;
+}
+
 .recent-work a {
   display: block;
   margin-bottom: 3px;
@@ -313,8 +316,6 @@ section {
 }
 
 .skills aside {
-  position: relative;
-  top: 1px;
   font-size: var(--font-size-2);
 }
 
