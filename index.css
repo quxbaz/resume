@@ -301,9 +301,13 @@ section {
   padding-top: 20px;
 }
 
+.recent-work .grid-row-right a {
+  position: absolute;
+}
+
 .recent-work .github-logo {
   position: relative;
-  top: -8px;
+  top: -7px;
   transition: all 180ms ease-out;
 }
 
