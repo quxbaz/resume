@@ -1,0 +1,15 @@
+@media print {
+
+  #Main {
+    padding: 0;
+  }
+
+  #Content {
+    box-shadow: none;
+  }
+
+  .skills, .recent-work {
+    page-break-before: always;
+  }
+
+}
