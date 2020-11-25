@@ -142,6 +142,12 @@ date {
   padding: 120px 0;
 }
 
+@media (max-width: 480px) {
+  #Main {
+    padding: 0;
+  }
+}
+
 #Content {
   grid-column: 2 / 3;
   padding-bottom: 40px;
