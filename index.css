@@ -292,10 +292,6 @@ section {
   transform: scale(1.1);
 }
 
-.recent-work date {
-  top: 11px;
-}
-
 .recent-work a {
   display: block;
   margin-bottom: 3px;
