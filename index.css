@@ -84,9 +84,9 @@ a:hover {
 }
 
 .smiley {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  margin-left: 6px;
+  margin-left: 16px;
   padding: 2px;
   border: 2px solid var(--grey-7);
   border-radius: 32px;
