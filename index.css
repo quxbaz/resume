@@ -265,6 +265,10 @@ section {
   list-style-type: none;
 }
 
+.history li a {
+  color: var(--purple-1);
+}
+
 /* Recent work section */
 
 .recent-work {}
