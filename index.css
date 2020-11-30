@@ -238,6 +238,7 @@ section {
 
 .history date {
   display: block;
+  margin-top: 1px;  /* Nudge the top to align baseline. */
 }
 
 .history location {
@@ -257,7 +258,7 @@ section {
 }
 
 .history .company:not(a) {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .history role {
