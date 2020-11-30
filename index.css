@@ -236,7 +236,18 @@ section {
 
 /* History section */
 
-.history aside {
+.history date {
+  display: block;
+}
+
+.history location {
+  display: block;
+  font-size: var(--font-size-1);
+  font-style: italic;
+  color: var(--grey-6);
+}
+
+.history .job-info {
   margin-bottom: 3px;
 }
 
